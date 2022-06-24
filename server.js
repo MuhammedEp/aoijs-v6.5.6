@@ -19,3 +19,9 @@ bot.readyCommand({
 
 const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./komutlar/")
+
+bot.status.add({
+    name: "Client Status Messagw",
+    presence: "online",
+    type: "WATCHING",
+    duration: 2000
