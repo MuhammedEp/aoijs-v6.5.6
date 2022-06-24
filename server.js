@@ -9,6 +9,9 @@ intents: "all"
 //Eventler
 bot.onMessage()
 
+bot.varibles({
+para:"0"
+})
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
