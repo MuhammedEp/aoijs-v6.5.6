@@ -9,14 +9,13 @@ intents: "all"
 //Eventler
 bot.onMessage()
 
-//Örnek Ping Komutu
-bot.command({
-name: "ping",
-code: `Pong! $pingms`
-})
+
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
     channel: "",
     code: `$log[Şu hesapla hazırım: $userTag[$clientID]]`
 })
+
+const loader = new aoijs.LoadCommands(bot)
+loader.load(bot.cmd,"./komutlar/")
