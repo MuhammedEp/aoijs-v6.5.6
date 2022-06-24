@@ -9,7 +9,7 @@ intents: "all"
 //Eventler
 bot.onMessage()
 
-bot.varibles({
+bot.variables({
 para:"0"
 })
 
