@@ -9,9 +9,11 @@ intents: "all"
 //Eventler
 bot.onMessage()
 
+
 bot.variables({
-param:"0"
-})
+para:"0",
+banka:"0",
+})    
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
