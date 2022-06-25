@@ -1,5 +1,5 @@
 module.exports = {
   name: "sa",
-  code: "as",
+  code: "As",
   nonPrefixed: true
 }

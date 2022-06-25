@@ -10,7 +10,7 @@ intents: "all"
 bot.onMessage()
 
 bot.variables({
-mc:"1"
+param:"0"
 })
 
 //Bot açıldığında konsola gönderilecek komut
