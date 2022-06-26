@@ -21,11 +21,6 @@ bot.readyCommand({
     channel: "",
     code: `$log[Şu hesapla hazırım: $userTag[$clientID]]`
 })
-bot.readyCommand({
-  channel: "955007368146587668",
-  code: `
-Yeniden aktifim Uptime sürem $uptime
-`
-});``
+
 const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./komutlar/")
