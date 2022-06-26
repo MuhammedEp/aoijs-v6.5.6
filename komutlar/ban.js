@@ -2,7 +2,7 @@ module.exports={
 name:"ban",
 code:`
 $argsCheck[>1;Lütfen yasaklanacak kişiyi etiketleyin]
-$onlyIF[$mentioned[1]==$mentionedRoles[1];Yasaklanak kullanıcıyı etiketleyin lütfen]
+$Yasaklanak kullanıcıyı etiketleyin lütfen]
 $author[1;$userTag yasaklamak istiyormusun?;$authorAvatar;]
 $thumbnail[1;$userAvatar[$mentioned[1]]]
 
