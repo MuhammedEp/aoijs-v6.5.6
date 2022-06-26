@@ -9,6 +9,7 @@ intents: "all"
 //Eventler
 bot.onMessage()
 
+bot.onInteractionCreate();
 
 bot.variables({
 para:"0",
