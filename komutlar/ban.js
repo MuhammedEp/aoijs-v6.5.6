@@ -6,7 +6,7 @@ $thumbnail[1;$userAvatar[$mentioned[1]]]
 
 $description[1;
 $addField[1;Yasaklanacak kişi:;$userTag[$mentioned[1]]]
-$addField[2;Yasaklanma sebebi:;$noMentionedMessage]
+$addField[1;Yasaklanma sebebi:;$message]]
 ]
 `
 }
