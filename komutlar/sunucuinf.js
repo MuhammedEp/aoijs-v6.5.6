@@ -12,10 +12,14 @@ $description[1;
 <:tac:981253324584149002> $userTag[$ownerID]
 
 **Sunucu Kuruluş Tarihi**:
-$creationDate[$guildID]
+📆\`$creationDate[$guildID]\`
 
 **Sunucu Güvenlik Seviyesi**:
-$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$serverVerificationLevel;None;Yok;1];Low;Düşük;1];Medium;Orta;1];High;Yüksek;1];VeryHigh;Çok Yüksek;1]
+$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$serverVerificationLevel;NONE;Yok;1];LOW;Düşük;1];MEDİUM;Orta;1];HİGH;Yüksek;1];VERYHİGH;Çok Yüksek;1]
+
+**Sunucu Bilgisi**:
+<:kullanici:977869477247082546> Toplam Üye: $membersCount
+<:boost:990915063089094696> Boost sayısı: $serverBoostCount
 
 ]
 `
