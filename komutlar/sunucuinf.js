@@ -15,12 +15,12 @@ $description[1;
 📆\`$creationDate[$guildID]\`
 
 **Sunucu Güvenlik Seviyesi**:
-$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$serverVerificationLevel;NONE;Yok;1];LOW;Düşük;1];MEDİUM;Orta;1];HİGH;Yüksek;1];VERYHİGH;Çok Yüksek;1]
+$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$serverVerificationLevel;NONE;Yok;1];LOW;Düşük;1];MEDIUM;Orta;1];HIGH;Yüksek;1];VERYHIGH;Çok Yüksek;1]
 
 **Sunucu Bilgisi**:
 <:kullanici:977869477247082546> Toplam Üye: $membersCount
 <:boost:990915063089094696> Boost sayısı: $serverBoostCount
-
+<a:BAN:954984243816189962> Toplam Yasaklı: $banCount
 ]
 `
 }
