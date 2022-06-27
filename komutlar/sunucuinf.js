@@ -2,7 +2,7 @@ module.exports={
 name:"sunucu",
 aliases:["server"],
 code:`
-$author[1;$serverName[$guildID] sunucusu bilgileri;$serverIcon]
+$author[1;$serverName[$guildID] Sunucu bilgileri;$serverIcon]
 $thumbnail[1;$serverIcon]
 $description[1;
 **Kanallar**:[$channelCount[$guildID]]
@@ -23,7 +23,9 @@ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$serverVerifica
 <a:BAN:954984243816189962> Toplam Yasaklı: $banCount
 
 **Üyeler**:
-<:cevrimici:977696691601952768>$membersCount[$guildID;Online]<:bosta:977697844385443970>$membersCount[$guildID;Idle]<:mesgul:977697566332452874>$membersCount[$guildID;Dnd]<:cevrimdisi:977697007810514984>$membersCount[$guildID;Offline]<:bot:977866256931762226>$botCount
+<:cevrimici:977696691601952768>$membersCount[$guildID;Online]<:bosta:977697844385443970>$membersCount[$guildID;Idle]<:mesgul:977697566332452874>$membersCount[$guildID;Dnd]<:cevrimdisi:977697007810514984>$membersCount[$guildID;all;no]<:bot:977866256931762226>$botCount
 ]
+$footer[1;Sorgulayan: $userTag;$authorAvatar]
+$color[1;GREEN]
 `
 }
