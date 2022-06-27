@@ -14,7 +14,7 @@ $message[2]
 ]
 
 $onlyIf[$findUser[$message[1];no]!=;<:reddet:973447718301216768> Lütfen yasaklanacak kişiyi etiketleyin.]
-$onlyIf[$message[1]==$serverOwner;Sunucu sahibini yasaklayamazsın.]
-$argsCheck[>1;Lütfen yasakalanacak kişiyi etiketleyin.]
+$onlyIf[$message[1]!=$ownerID;Sunucu sahibini yasaklayamazsın.]
+
 `
 }
