@@ -11,7 +11,11 @@ $description[1;
 **Sunucu Sahibi**:
 <:tac:981253324584149002> $userTag[$ownerID]
 
-**Sunucu Bölgesi**:
+**Sunucu Kuruluş Tarihi**:
+$creationDate[$guildID]
+
+**Sunucu Güvenlik Seviyesi**:
+$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$serverVerificationLevel;None;Yok;1];Low;Düşük;1];Medium;Orta;1];High;Yüksek;1];VeryHigh;Çok Yüksek;1]
 
 ]
 `
