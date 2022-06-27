@@ -6,7 +6,7 @@ code: `
 $deleteChannels[$channelID]
 $cloneChannel
 
-$onlyPerms[managemessages; <@$authorID>, bu komutu kullanmak için \`Mesajları Yönet\` iznine sahip olmalısın.]
+$onlyPerms[managemessages;admin; <@$authorID>, bu komutu kullanmak için \`Mesajları Yönet\` iznine sahip olmalısın.]
 
 `
 }   
