@@ -23,7 +23,7 @@ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$serverVerifica
 <a:BAN:954984243816189962> Toplam Yasaklı: $banCount
 
 **Üyeler**:
-<:cevrimici:977696691601952768>$membersCount[$guildID;Online]<:bosta:977697844385443970>$membersCount[$guildID;İdle]<:mesgul:977697566332452874>$
+<:cevrimici:977696691601952768>$membersCount[$guildID;Online]<:bosta:977697844385443970>$membersCount[$guildID;Idle]<:mesgul:977697566332452874>$membersCount[$guildID;Dnd]<:cevrimdisi:977697007810514984>$membersCount[$guildID;Offline]<:bot:977866256931762226>$botCount
 ]
 `
 }
