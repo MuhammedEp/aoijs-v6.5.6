@@ -16,6 +16,14 @@ para:"0",
 banka:"0",
 })    
 
+
+bot.status({
+text: "Macbot Destek",
+type: "GAMEİNG",
+status: "online",
+time: "12",
+})
+
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
     channel: "",
