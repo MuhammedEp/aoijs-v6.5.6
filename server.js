@@ -12,6 +12,7 @@ bot.onInteractionCreate();
 bot.variables({
 para:"0",
 banka:"0",
+hgbb:"",
 })    
 bot.status({
 text: "Macbot Destek",
