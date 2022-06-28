@@ -13,6 +13,7 @@ bot.variables({
 para:"0",
 banka:"0",
 hgbb:"",
+banlog:"",
 })    
 bot.status({
 text: "Macbot Destek",
@@ -22,6 +23,7 @@ time: "12",
 })
 bot.onJoin()
 bot.onLeave()
+bot.onBanAdd()
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
@@ -48,3 +50,10 @@ code: `
 $wait[1s]
 `
 })
+bot.banAddCommand({ 
+channel: "$getServerVar[banlog]", //Add getServerVar to get the servers log channel (if they set it ofcourse)
+code: `
+$author[1;$userTag Adlı kişi sunucudan yasaklandı.;$userAvatar]
+`
+})
+
