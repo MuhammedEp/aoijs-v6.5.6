@@ -53,11 +53,16 @@ $wait[1s]
 bot.banAddCommand({ 
 channel: "991250636911947866", 
 code: `
-$author[1;$userTag Adlı kişi sunucudan yasaklandı.;$userAvatar]
+$author[1;$userTag Adlı kişi sunucudan yasaklandı.;$authorAvatar]
 $thumbnail[1;$authorAvatar]
 $description[1;
 **Yasaklanma Sebebi:**
-$getBanReason[$guildID;$authorID]]
+\`\`\`$getBanReason[$guildID;$authorID]\`\`\`
+
+**Yasaklanma Tarihi:**
+\`\`\`$date\`\`\`
+]
+$footer[1;Yasaklayan Kişi:$userTag[$authorID];$serverIcon]
 `
 })
 
