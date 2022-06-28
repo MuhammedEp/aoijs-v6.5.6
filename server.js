@@ -60,9 +60,8 @@ $description[1;
 \`\`\`$getBanReason[$guildID;$authorID]\`\`\`
 
 **Yasaklanma Tarihi:**
-\`\`\`$date\`\`\`
+\`\`\`$date.$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$month;january;01;1];february;02;1];march;03;1];april;04;1];may;5;1];june;06;1];july;07;1];august;08;1];september;09;1];october;10;1];november; / Kasım / ;1];-12-; / Aralık / ;1] \`\`\`
 ]
 $footer[1;Yasaklayan Kişi:$userTag[$authorID];$serverIcon]
 `
 })
-
