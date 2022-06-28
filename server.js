@@ -34,7 +34,7 @@ loader.load(bot.cmd,"./komutlar/")
 
 //CALLBACKLER
 bot.joinCommand({ 
-channel: "990212719280025630", 
+channel: "$getServerVar[hgbb]", 
 code: `
 <a:mgiris:974950521507045376> **$username** hoşgeldin **$serverName[$guildID]** sunucusuna seninle beraber \`$membersCount\` kişiyiz.
 $wait[1s]
@@ -42,7 +42,7 @@ $wait[1s]
 }) 
 
 bot.leaveCommand({
-channel: "990212719280025630", 
+channel: "$getServerVar[hgbb]", 
 code: `
 <a:mcikis:962963635909562378> **$username** görüşmek üzere sensiz \`$membersCount\` kişiyiz.
 $wait[1s]
