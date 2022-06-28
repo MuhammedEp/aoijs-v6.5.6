@@ -51,13 +51,13 @@ $wait[1s]
 `
 })
 bot.banAddCommand({ 
-channel: "$getServerVar[banlog]", //Add getServerVar to get the servers log channel (if they set it ofcourse)
+channel: "991250636911947866", 
 code: `
 $author[1;$userTag Adlı kişi sunucudan yasaklandı.;$userAvatar]
 $thumbnail[1;$authorAvatar]
 $description[1;
 **Yasaklanma Sebebi:**
-\`$banReason\`
+$getBanReason[$guildID;$authorID]]
 `
 })
 
