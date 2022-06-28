@@ -61,6 +61,6 @@ $addField[1;Yasaklanma Tarihi:;
 ;yes]
 $addField[1;Yasaklanma Sebebi:;
 \`\`\`$getBanReason[$guildID;$authorID]\`\`\`;yes]]
-$footer[1;Yasaklandığı sunucu $serverName[$guildID];$serverIcon]
+$footer[1;Yasaklandığı sunucu:$serverName[$guildID];<a:BAN:954984243816189962>]
 `
 })
