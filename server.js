@@ -55,13 +55,13 @@ channel: "991250636911947866",
 code: `
 $author[1;$userTag Adlı kişi sunucudan yasaklandı.;$userAvatar]
 $thumbnail[1;$userAvatar]
-$description[1;
-**Yasaklanma Sebebi:**
-\`\`\`$getBanReason[$guildID;$authorID]\`\`\`
-
-**Yasaklanma Tarihi:**
+$description[1;$addField[1;
+Yasaklanma Sebebi:;
+\`\`\`$getBanReason[$guildID;$authorID]\`\`\`;no]
+$addField[1;
+Yasaklanma Tarihi:;
 \`\`\`$date.$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$month;january;01;1];february;02;1];march;03;1];april;04;1];may;5;1];june;06;1];july;07;1];august;08;1];september;09;1];october;10;1];november;11;1];december;12;1].$year \`\`\`
-]
-$footer[1;Yasaklayan Kişi:$authorID;$serverIcon]
+;yes]]
+$footer[1;Yasaklayan Kişi:$username;$serverIcon]
 `
 })
