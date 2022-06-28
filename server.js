@@ -7,7 +7,6 @@ intents: "all"
 })
 
 //Eventler
-bot.onJoined()
 bot.onMessage()
 
 bot.onInteractionCreate();
@@ -34,3 +33,22 @@ bot.readyCommand({
 
 const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./komutlar/")
+
+//CALLBACKLAR
+
+
+bot.joinCommand({ 
+channel: "990212719280025630", 
+code: `
+\`$username\` hoşgeldin 
+$wait[1s]
+`
+}) 
+
+bot.leaveCommand({
+channel: "990212719280025630", 
+code: `
+\`$username\` görüşmek üzere.
+$wait[1s]
+`
+})
