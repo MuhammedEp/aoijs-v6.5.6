@@ -20,7 +20,7 @@ status: "online",
 time: "12",
 })
 bot.onJoin()
-bot.onLeave
+bot.onLeave()
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
