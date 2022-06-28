@@ -8,22 +8,19 @@ intents: "all"
 
 //Eventler
 bot.onMessage()
-
 bot.onInteractionCreate();
-
 bot.variables({
 para:"0",
 banka:"0",
 })    
-
-
 bot.status({
 text: "Macbot Destek",
 type: "GAMEİNG",
 status: "online",
 time: "12",
 })
-
+bot.onJoin()
+bot.onLeave
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
@@ -34,9 +31,7 @@ bot.readyCommand({
 const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./komutlar/")
 
-//CALLBACKLAR
-
-
+//CALLBACKLER
 bot.joinCommand({ 
 channel: "990212719280025630", 
 code: `
