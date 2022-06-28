@@ -7,6 +7,7 @@ intents: "all"
 })
 
 //Eventler
+bot.onJoined()
 bot.onMessage()
 
 bot.onInteractionCreate();
@@ -24,7 +25,6 @@ status: "online",
 time: "12",
 })
 
-bot.onJoin()
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({

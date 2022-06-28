@@ -1,6 +1,6 @@
 bot.joinCommand({ 
-channel: "782446718704812032", 
+channel: "", 
 code:`
 Welcome to $serverName, $username
-'
+`
 })  
