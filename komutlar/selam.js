@@ -1,5 +1,9 @@
 module.exports = {
-  name: "sa",
-  code: "As",
-  nonPrefixed: true
+  name: "",
+  nonPrefixed:true,
+  code: `
+  $if[$message[1]==]
+  
+  
+`
 }
