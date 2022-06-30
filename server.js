@@ -24,6 +24,7 @@ time: "12",
 bot.onJoin()
 bot.onLeave()
 bot.onBanAdd()
+bot.onBanRemove()
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
@@ -63,4 +64,10 @@ $addField[1;Yasaklanma Sebebi:;
 \`\`\`$getBanReason[$guildID;$authorID]\`\`\`;yes]]
 $footer[1;Yasaklandığı sunucu:$serverName[$guildID];<a:BAN:954984243816189962>]
 `
+})
+bot.banRemoveCommand({ 
+channel: "channel id", 
+code: `
+$author[
+` 
 })
