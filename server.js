@@ -51,10 +51,11 @@ code: `
 $wait[1s]
 `
 })
+
 bot.banAddCommand({ 
-channel: "991250636911947866", 
+channel: "991253350165258270", 
 code: `
-$author[1;$userTag Adlı kişi sunucudan yasaklandı.;$userAvatar]
+$author[1;$userTag Adlı kişi sunucudan yasaklandı.;$authorAvatar]
 $thumbnail[1;$authorAvatar]
 $description[1;
 $addField[1;Yasaklanma Tarihi:;
@@ -65,14 +66,15 @@ $addField[1;Yasaklanma Sebebi:;
 $footer[1;Yasaklandığı sunucu:$serverName[$guildID];<a:BAN:954984243816189962>]
 `
 })
+
 bot.banRemoveCommand({ 
-channel: "991250636911947866", 
+channel: "991253350165258270", 
 code: `
-$author[1;$userTag Adlı kişinin yasağı kaldırıldı.;$authorID]
+$author[1;$userTag Adlı kişinin yasağı kaldırıldı.;$authorAvatar]
 $thumbnail[1;$authorAvatar]
 $description[1;
 Yasağı kaldıran:
-$userTag[$authorID]]
+$userTag]
 $footer[1;Yasak Kaldırılma Tarihi]
 $addTimestamp[1]
 ` 
