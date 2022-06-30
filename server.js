@@ -66,8 +66,14 @@ $footer[1;Yasaklandığı sunucu:$serverName[$guildID];<a:BAN:954984243816189962
 `
 })
 bot.banRemoveCommand({ 
-channel: "channel id", 
+channel: "991250636911947866", 
 code: `
-$author[
+$author[1;$userTag Adlı kişinin yasağı kaldırıldı.;$authorID]
+$thumbnail[1;$authorAvatar]
+$description[1;
+Yasağı kaldıran:
+$userTag[$authorID]]
+$footer[1;Yasak Kaldırılma Tarihi]
+$addTimestamp[1]
 ` 
 })
