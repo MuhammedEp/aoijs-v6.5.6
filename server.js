@@ -62,8 +62,8 @@ $addField[1;Yasaklanma Tarihi:;
 \`\`\`$date.$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$month;january;01;1];february;02;1];march;03;1];april;04;1];may;5;1];june;06;1];july;07;1];august;08;1];september;09;1];october;10;1];november;11;1];december;12;1].$year \`\`\`
 ;yes]
 $addField[1;Yasaklanma Sebebi:;
-\`\`\`$getBanReason[$guildID;$authorID]\`\`\`;yes]]
-$footer[1;Yasaklandığı sunucu:$serverName[$guildID];<a:BAN:954984243816189962>]
+\`\`\`$checkContains$getBanReason[$guildID;$authorID]\`\`\`;yes]]
+$footer[1;Yasaklandığı sunucu:$serverName[$guildID]]
 `
 })
 
@@ -72,9 +72,7 @@ channel: "991253350165258270",
 code: `
 $author[1;$userTag Adlı kişinin yasağı kaldırıldı.;$authorAvatar]
 $thumbnail[1;$authorAvatar]
-$description[1;
-Yasağı kaldıran:
-$userTag]
+
 $footer[1;Yasak Kaldırılma Tarihi]
 $addTimestamp[1]
 ` 
