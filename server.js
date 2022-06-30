@@ -17,9 +17,13 @@ banlog:"",
 })    
 bot.status({
 text: "Macbot Destek",
-type: "GAMEİNG",
+type: "PLAYİNG",
 status: "online",
-time: "12",
+time: "120",
+},{
+text:"$serverCount sunucunun hizmetindeyiz",
+type:"PLAYİNG",
+status:"online",
 })
 bot.onJoin()
 bot.onLeave()
@@ -39,7 +43,7 @@ loader.load(bot.cmd,"./komutlar/")
 bot.joinCommand({ 
 channel: "$getServerVar[hgbb]", 
 code: `
-<a:mgiris:974950521507045376> **$username** hoşgeldin **$serverName[$guildID]** sunucusuna seninle beraber \`$membersCount\` kişiyiz.
+<a:mgiris:974950521507045376> **$userTag** hoşgeldin **$serverName[$guildID]** sunucusuna seninle beraber \`$membersCount\` kişiyiz.
 $wait[1s]
 `
 }) 
@@ -47,7 +51,7 @@ $wait[1s]
 bot.leaveCommand({
 channel: "$getServerVar[hgbb]", 
 code: `
-<a:mcikis:962963635909562378> **$username** görüşmek üzere sensiz \`$membersCount\` kişiyiz.
+<a:mcikis:962963635909562378> **$userTag** görüşmek üzere sensiz \`$membersCount\` kişiyiz.
 $wait[1s]
 `
 })
