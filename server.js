@@ -22,7 +22,11 @@ status: "online",
 time: "120",
 },{
 text:"$serverCount sunucunun hizmetindeyiz",
-type:"PLAYİNG",
+type:"WATCHİNG",
+status:"online",
+},{
+text:"$allMembersCount kişiye hizmet veriyoruz",
+type:"WATCHİNG",
 status:"online",
 })
 bot.onJoin()
