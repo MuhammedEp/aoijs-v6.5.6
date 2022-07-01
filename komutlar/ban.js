@@ -1,9 +1,7 @@
-
-module.exports = ({
+module.exports =({
 name: "ban",
 aliases:["yasakla"],
 code: `
-$ban[$guildID;$mentioned[1];0;$noMentionMessage[1]]
 $color[1;#2f3136]
 $title[1;İşlem Başarılı]
 $description[1;Bir sunucu üyesi sunucudan uzaklaştrıldı...]
@@ -26,22 +24,11 @@ $addButton[1;Onayla;primary;ban;no;✔️]
 $addButton[1;İptal;primary;iptal;no;❌]
 $addButton[1;Mesaj silmeden banla;primary;msjsilme;no;💬]
 `
-});
-bot.interactionCommand({
-  name: "helloButton",
-  prototype: 'button',
-  code: `
-  $interactionReply[Bye, bye!]
-  `bot.interactionCommand({
-  name: "helloButton",
+},
+bot.interactionCommand={
+  name: "banla",
   prototype: 'button',
   code: `
   $interactionReply[Bye, bye!]
   `
-bot.interactionCommand({
-  name: "helloButton",
-  prototype: 'button',
-  code: `
-  $interactionReply[Bye, bye!]
-bot.interactionCommand({
-  name: "helloButton
+})
