@@ -1,5 +1,5 @@
 
-module.exports = {
+module.exports = ({
 name: "ban",
 aliases:["yasakla"],
 code: `
@@ -22,5 +22,26 @@ $onlyIf[$rolePosition[$highestRole[$clientID]]<=$rolePosition[$highestRole[$ment
 $onlyIf[$rolePosition[$highestRole[$authorID]]<=$rolePosition[$highestRole[$mentioned[1]]];{newEmbed:{description:<@$authorID>, Rolünden üstte/eşit birini uzaklaştıramazsın.}{color:2f3136}}]
 $onlyIf[$mentioned[1;no]!=undefined;{newEmbed:{description:<@$authorID>, Bir kullanıcı etiketlemelisin.}{color:2f3136}}]
 $onlyIf[$message!=;{newEmbed:{description:<@$authorID>, Kullanıcı belirt.}{color:2f3136}}]
+$addButton[1;Onayla;primary;ban;no;✔️]
+$addButton[1;İptal;primary;iptal;no;❌]
+$addButton[1;Mesaj silmeden banla;primary;msjsilme;no;💬]
 `
-}
+});
+bot.interactionCommand({
+  name: "helloButton",
+  prototype: 'button',
+  code: `
+  $interactionReply[Bye, bye!]
+  `bot.interactionCommand({
+  name: "helloButton",
+  prototype: 'button',
+  code: `
+  $interactionReply[Bye, bye!]
+  `
+bot.interactionCommand({
+  name: "helloButton",
+  prototype: 'button',
+  code: `
+  $interactionReply[Bye, bye!]
+bot.interactionCommand({
+  name: "helloButton
