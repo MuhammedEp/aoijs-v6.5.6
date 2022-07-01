@@ -14,6 +14,8 @@ para:"0",
 banka:"0",
 hgbb:"",
 banlog:"",
+spams:"kapalı",
+spam:"-3",
 })    
 bot.status({
 text: "Macbot Destek",
