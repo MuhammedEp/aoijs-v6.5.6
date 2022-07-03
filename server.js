@@ -11,11 +11,13 @@ bot.onMessage()
 bot.onInteractionCreate();
 bot.variables({
 para:"0",
-banka:"0",
 hgbb:"",
 banlog:"",
 spams:"kapalı",
 spam:"-3",
+meslek:"Yok",
+mpara:"0",
+bank:"0",
 })    
 bot.status({
 text: "Macbot Destek",
