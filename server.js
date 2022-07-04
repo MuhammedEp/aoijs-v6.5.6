@@ -16,8 +16,8 @@ spams:"kapalı",
 spam:"-3",
 meslek:"Yok",
 mpara:"0",
-banka:"1",
-para:"1",
+banka:"0",
+para:"0",
 })    
 bot.status({
 text: "Macbot Destek",

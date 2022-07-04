@@ -3,7 +3,6 @@ name:"cüzdan",
 aliases:["param"],
 code:`
 $reply
-$allowUserMentions[]
 $onlyIf[$isBot[$mentioned[1;yes]]!=true;\`Hata Algılandı\` Bu Bir Bot]
  
 $thumbnail[1;$userAvatar[$mentioned[1;yes]]]
@@ -16,8 +15,8 @@ $description[1;**Cüzdan:**
 <:ekonomi:992883154346049587> $abbreviate[$getGlobalUserVar[banka;$mentioned[1;yes]];1]
  
 **Meslek**
-Meslek:$getVar[meslek;$mentioned[1;yes]]
-Maaş:$abbreviate[$getVar[mpara;$mentioned[1;yes]]]
+Meslek:***$getGlobalUserVar[meslek;$mentioned[1;yes]]***
+Maaş:***$abbreviate[$getGlobalUserVar[mpara;$mentioned[1;yes]]]**
 
 **Toplam Para:**
 :money_with_wings: $numberSeparator[$sum[$getGlobalUserVar[para;$mentioned[1;yes]];$getGlobalUserVar[banka;$mentioned[1;yes]]]]]
