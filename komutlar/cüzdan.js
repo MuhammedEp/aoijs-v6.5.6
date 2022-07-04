@@ -16,7 +16,7 @@ $description[1;**Cüzdan:**
  
 **Meslek**
 Meslek:***$getGlobalUserVar[meslek;$mentioned[1;yes]]***
-Maaş:***$abbreviate[$getGlobalUserVar[mpara;$mentioned[1;yes]]]**
+Maaş:***$abbreviate[$getGlobalUserVar[mpara;$mentioned[1;yes]]]***
 
 **Toplam Para:**
 :money_with_wings: $numberSeparator[$sum[$getGlobalUserVar[para;$mentioned[1;yes]];$getGlobalUserVar[banka;$mentioned[1;yes]]]]]
