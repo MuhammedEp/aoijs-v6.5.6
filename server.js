@@ -10,14 +10,14 @@ intents: "all"
 bot.onMessage()
 bot.onInteractionCreate();
 bot.variables({
-para:"0",
 hgbb:"",
 banlog:"",
 spams:"kapalı",
 spam:"-3",
 meslek:"Yok",
 mpara:"0",
-bank:"0",
+banka:"1",
+para:"1",
 })    
 bot.status({
 text: "Macbot Destek",
