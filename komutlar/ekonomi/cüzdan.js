@@ -1,6 +1,6 @@
 module.exports={
 name:"cüzdan",
-aliases:["param"],
+aliases:["param","bal"],
 code:`
 $reply
 $onlyIf[$isBot[$mentioned[1;yes]]!=true;\`Hata Algılandı\` Bu Bir Bot]
