@@ -24,11 +24,4 @@ $addButton[1;Onayla;primary;ban;no;✔️]
 $addButton[1;İptal;primary;iptal;no;❌]
 $addButton[1;Mesaj silmeden banla;primary;msjsilme;no;💬]
 `
-},
-bot.interactionCommand={
-  name: "banla",
-  prototype: 'button',
-  code: `
-  $interactionReply[Bye, bye!]
-  `
 })
