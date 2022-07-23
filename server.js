@@ -25,11 +25,7 @@ type: "PLAYİNG",
 status: "online",
 time: "120",
 },{
-text:"$serverCount sunucunun hizmetindeyiz",
-type:"WATCHİNG",
-status:"online",
-},{
-text:"$allMembersCount kişiye hizmet veriyoruz",
+text:"$serverCount sunucunun $membersCount kişinin hizmetindeyiz",
 type:"WATCHİNG",
 status:"online",
 })
