@@ -2,7 +2,7 @@ const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
 token: process.env.token,
-prefix: process.env.prefix,
+prefix: "$getServerVar[prefix]",
 intents: "all"
 })
 
@@ -18,6 +18,7 @@ meslek:"Yok",
 mpara:"0",
 banka:"0",
 para:"0",
+prefix:"+",
 })    
 bot.status({
 text: "Macbot Destek",
