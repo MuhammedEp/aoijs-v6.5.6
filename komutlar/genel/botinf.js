@@ -4,7 +4,8 @@ aliases:["i","bot","botbilgi"],
 code:`
 $addField[1;Gecikmeler:;
 **Ping:** $pingms
-**Mesaj Ping:** $executionTimems]
+**Mesaj Ping:** $messagePingms
+**Komut Yürütme:** $executionTimems]
 
 $addField[1;Node Sürümü:;$nodeVersion]
 
@@ -16,6 +17,6 @@ $addField[1;Sunucu Sayısı:;$serverCount]
 
 $addField[1;Kütüphane:;Glitch[Aoi.js]]
 
-$addField[1;$Bot Sahibi
+$addField[1;Bot Sahibi:;[$userTag[$botOwnerID]](https://discord.com/users/$botOwnerID)]
 `
 }
