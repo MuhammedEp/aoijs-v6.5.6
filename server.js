@@ -38,6 +38,7 @@ bot.onJoin()
 bot.onLeave()
 bot.onBanAdd()
 bot.onBanRemove()
+bot.onMessageDelete()
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
@@ -119,3 +120,9 @@ bot.interactionCommand({
   $onlyIf[$interactionData[values[0]]==0;]
   `
 });
+bot.deletedCommand({
+    channel: "1000316728955387944",
+    code: `Message from , was deleted in <#$channelUsed>: $message`
+  
+  
+  })
