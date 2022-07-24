@@ -94,13 +94,8 @@ $addTimestamp[1]
 bot.deletedCommand({
     channel: "1000316728955387944",
     code: `
-  $author[1; $userTag adlı kişinin mesajı silindi;$authorAvatar;]
-  $thumbnail[1;$userAvata
+$author[1; $userTag adlı kişinin mesajı silindi;$authorAvatar;]
+$thumbnail[1;$authorAvatar]
+$footer[1;Mesajı Silen: $userTag
 `
-});
-bot.updateCommand({
-        channel: "1000316728955387944", 
-        code: `Message edited from $username in <#$channelUsed>:
-$message
-Old message: $oldMessage`
 })
