@@ -90,11 +90,4 @@ $footer[1;Yasak Kaldırılma Tarihi]
 $addTimestamp[1]
 ` 
 })
-//BUTTONS
-bot.interactionCommand=({
-  name: "ban",
-  prototype: 'button',
-  code: `
-  $interactionReply[Bye, bye!]
-  `
-})
+//Yardım Menu
