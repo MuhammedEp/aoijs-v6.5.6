@@ -21,5 +21,6 @@ $addField[1;Yapım tarihi:;$creationDate[$clientID]]
 $author[1;$username[$clientID] bot bilgileri;$userAvatar[$clientID];]
 $footer[1;Sorgulayan: $userTag;$authorAvatar;]
 $thumbnail[1;$userAvatar[$clientID]]
+$color[1;GREEN]
 `
 }
