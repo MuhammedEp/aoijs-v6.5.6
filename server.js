@@ -96,6 +96,6 @@ bot.deletedCommand({
     code: `
 $author[1; $userTag adlı kişinin mesajı silindi;$authorAvatar;]
 $thumbnail[1;$authorAvatar]
-$footer[1;Mesajı Silen: $userTag
+$footer[1;Mesajı Silen: $userTag Kanal:$channelName[$channelID]]
 `
 })
