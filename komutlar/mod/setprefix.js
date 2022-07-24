@@ -1,6 +1,6 @@
 module.exports=({
 name:"setprefix",
-aliases:["prefix,prefix-ayarla"],
+aliases:["prefix","prefix-ayarla"],
 code:`
 $reply[$messageID;;no]
 $onlyPerms[admin;:x: Yetkiniz yetmiyor]
