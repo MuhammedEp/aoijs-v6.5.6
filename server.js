@@ -22,9 +22,9 @@ prefix:"+",
 })    
 bot.status({
 text: "Macbot Destek",
-type: "PLAYİNG",
+type: "Watching",
 status: "online",
-time: "12",
+time: "180",
 },{
 text:"$serverCount sunucuya hizmet veriyoruz",
 type:"WATCHİNG",
@@ -32,7 +32,7 @@ status:"online",
 },{
 text:"$allMembersCount kişiyiz",
 type:"Watching",
-status:"idle",
+status:"online",
 })
 bot.onJoin()
 bot.onLeave()
