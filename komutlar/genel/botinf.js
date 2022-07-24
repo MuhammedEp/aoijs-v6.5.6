@@ -4,6 +4,10 @@ aliases:["i","bot","botbilgi"],
 code:`
 $addField[1;Gecikmeler;
 **Ping:** $pingms
-**Komut Yürütme:** $executionTimems]
+**Mesaj Ping:** $executionTimems]
+
+$addField[1;Node Sürümü;$nodeVersion]
+
+$addField[1;
 `
 }
