@@ -39,6 +39,7 @@ bot.onLeave()
 bot.onBanAdd()
 bot.onBanRemove()
 bot.onMessageDelete()
+bot.updateCommand()
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
@@ -122,7 +123,13 @@ bot.interactionCommand({
 });
 bot.deletedCommand({
     channel: "1000316728955387944",
-    code: `Message from , was deleted in <#$channelUsed>: $message`
+    code: `Message from <@$authorID>, was deleted in <#$channelUsed>: $message`
   
   
   })
+bot.updateCommand({
+        channel: "1000316728955387944", 
+        code: `Message edited from $username in <#$channelUsed>:
+$message
+Old message: $oldMessage`
+})
