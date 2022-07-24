@@ -8,6 +8,6 @@ $addField[1;Gecikmeler;
 
 $addField[1;Node Sürümü;$nodeVersion]
 
-$addField[1;
+$addField[1;Ram;$ram[heapTotal]]
 `
 }
