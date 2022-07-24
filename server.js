@@ -39,8 +39,6 @@ bot.onLeave()
 bot.onBanAdd()
 bot.onBanRemove()
 bot.onMessageDelete()
-bot.updateCommand()
-
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
     channel: "",
@@ -92,41 +90,14 @@ $footer[1;Yasak Kaldırılma Tarihi]
 $addTimestamp[1]
 ` 
 })
-//Yardım Menu
-bot.command({
-  name: "menu",
-  code:`
-  Select an option.
-  
-  $addSelectMenu[1;helpCustomID;This placeholder won't show up cause we have selected default field as yes;1;1;no;A Option:Description of A option:helpValue0:no:👋;B Option::helpValue1:yes]
-  `
-});
 
-bot.interactionCommand({
-  name: "helpCustomID",
-  prototype: "selectMenu", 
-  code: `
-  $interactionUpdate[A option's response.;;{actionRow:{selectMenu:helpCustomID:Menu has been disabled:1:1:yes:{selectMenuOptions:This won't show up:helpValue0:Either this.:false}{selectMenuOptions:This won't show up either.:helpValue1:cause menu disabled.:false}}}]
-
-  $onlyIf[$interactionData[values[0]]==0;]
-  `
-});
-
-bot.interactionCommand({
-  name: "helpCustomID",
-  prototype: "selectMenu", 
-  code: `
-  $interactionUpdate[B option's response.;;{actionRow:{selectMenu:helpCustomID:Menu has been disabled:1:1:yes:{selectMenuOptions:This won't show up:helpValue0:Either this.:false}{selectMenuOptions:This won't show up either.:helpValue1:cause menu disabled.:false}}}]
-
-  $onlyIf[$interactionData[values[0]]==0;]
-  `
-});
 bot.deletedCommand({
     channel: "1000316728955387944",
-    code: `Message from <@$authorID>, was deleted in <#$channelUsed>: $message`
-  
-  
-  })
+    code: `
+  $author[1; $userTag adlı kişinin mesajı silindi;$authorAvatar;]
+  $
+`
+});
 bot.updateCommand({
         channel: "1000316728955387944", 
         code: `Message edited from $username in <#$channelUsed>:
