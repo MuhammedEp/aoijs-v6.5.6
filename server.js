@@ -95,7 +95,7 @@ bot.deletedCommand({
     channel: "1000316728955387944",
     code: `
   $author[1; $userTag adlı kişinin mesajı silindi;$authorAvatar;]
-  $
+  $thumbnail[1;$userAvata
 `
 });
 bot.updateCommand({
