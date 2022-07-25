@@ -39,6 +39,7 @@ bot.onLeave()
 bot.onBanAdd()
 bot.onBanRemove()
 bot.onMessageDelete()
+
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
     channel: "",
@@ -104,7 +105,7 @@ $addField[1;Silinen Mesaj:;$if[$message==;\`\`\`Bilinmiyor\`\`\`;\`\`\`$message\
 
 
 bot.channelUpdateCommand({ 
-channel: "772414449839636490", 
+channel: "1000316728955387944", 
 code: `
 Channel Name Updated
 Old Name: $oldChannel[name]
