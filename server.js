@@ -101,3 +101,13 @@ $description[1;
 $addField[1;Silinen Mesaj:;$if[$message==;\`\`\`Bilinmiyor\`\`\`;\`\`\`$message\`\`\`]]]
 `
 })
+
+
+bot.channelUpdateCommand({ 
+channel: "772414449839636490", 
+code: `
+Channel Name Updated
+Old Name: $oldChannel[name]
+New Name: $newChannel[name]
+`
+})
