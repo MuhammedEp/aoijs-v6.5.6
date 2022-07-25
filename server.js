@@ -95,20 +95,11 @@ $addTimestamp[1]
 bot.deletedCommand({
     channel: "1000316728955387944",
     code: `
-$author[1; $userTag adlı kişinin mesajı silindi;$authorAvatar;]
+$author[1; $userTag[$authorID] adlı kişinin mesajı silindi;$authorAvatar;]
 $thumbnail[1;$authorAvatar]
-$footer[1;Mesajı Silen: $userTag | Kanal:#$channelName[$channelUsed];$authorAvatar]
+$footer[1;Mesajı Silen: $authorID | Kanal:#$channelName[$channelUsed];$authorAvatar]
 $description[1;
 $addField[1;Silinen Mesaj:;$if[$message==;\`\`\`Bilinmiyor\`\`\`;\`\`\`$message\`\`\`]]]
 `
 })
 
-
-bot.channelUpdateCommand({ 
-channel: "1000316728955387944", 
-code: `
-Channel Name Updated
-Old Name: $oldChannel[name]
-New Name: $newChannel[name]
-`
-})
