@@ -1,74 +1,78 @@
-const aoijs = require("aoi.js")
+const aoijs = require("aoi.js");
 
 const bot = new aoijs.Bot({
-token: process.env.token,
-prefix: "$getServerVar[prefix]",
-intents: "all"
-})
+  token: process.env.token,
+  prefix: "$getServerVar[prefix]",
+  intents: "all",
+});
 
 //Eventler
-bot.onMessage()
+bot.onMessage();
 bot.onInteractionCreate();
 bot.variables({
-hgbb:"",
-banlog:"",
-spams:"kapalı",
-spam:"-3",
-meslek:"Yok",
-mpara:"0",
-banka:"0",
-para:"0",
-prefix:"+",
-})    
-bot.status({
-text: "Macbot Destek",
-type: "Watching",
-status: "online",
-time: "180",
-},{
-text:"$serverCount sunucuya hizmet veriyoruz",
-type:"WATCHİNG",
-status:"online",
-},{
-text:"$allMembersCount kişiyiz",
-type:"Watching",
-status:"online",
-})
-bot.onJoin()
-bot.onLeave()
-bot.onBanAdd()
-bot.onBanRemove()
-bot.onMessageDelete()
+  hgbb: "",
+  banlog: "",
+  spams: "kapalı",
+  spam: "-3",
+  meslek: "Yok",
+  mpara: "0",
+  banka: "0",
+  para: "0",
+  prefix: "+",
+});
+bot.status(
+  {
+    text: "Macbot Destek",
+    type: "Watching",
+    status: "online",
+    time: "180",
+  },
+  {
+    text: "$serverCount sunucuya hizmet veriyoruz",
+    type: "WATCHİNG",
+    status: "online",
+  },
+  {
+    text: "$allMembersCount kişiyiz",
+    type: "Watching",
+    status: "online",
+  }
+);
+bot.onJoin();
+bot.onLeave();
+bot.onBanAdd();
+bot.onBanRemove();
+bot.onMessageDelete();
 
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
-    channel: "",
-    code: `$log[Şu hesapla hazırım: $userTag[$clientID]]`
-})
+  channel: "",
+  code: `$log[Şu hesapla hazırım: $userTag[$clientID]]`,
+});
 
-const loader = new aoijs.LoadCommands(bot)
-loader.load(bot.cmd,"./komutlar/")
+const loader = new aoijs.LoadCommands(bot);
+loader.load(bot.cmd, "./komutlar/");
 
 //CALLBACKLER
-bot.joinCommand({ 
-channel: "$getServerVar[hgbb]", 
-code: `
+bot.joinCommand({
+  channel: "$getServerVar[hgbb]",
+  code: `
 <a:mgiris:974950521507045376> **$userTag** hoşgeldin **$serverName[$guildID]** sunucusuna seninle beraber \`$membersCount\` kişiyiz.
 $wait[1s]
-`
-}) 
+`,
+});
 
 bot.leaveCommand({
-channel: "$getServerVar[hgbb]", 
-code: `
+  channel: "$getServerVar[hgbb]",
+  code: `
 <a:mcikis:962963635909562378> **$userTag** görüşmek üzere sensiz \`$membersCount\` kişiyiz.
 $wait[1s]
-`
-})
+`,
+});
 
-bot.banAddCommand({ 
-channel: "$getServerVar[banlog]", 
-code: `
+bot.banAddCommand({
+  channel: "$getServerVar[banlog]",
+  code: `
 $author[1;$userTag Adlı kişi sunucudan yasaklandı.;$authorAvatar]
 $thumbnail[1;$authorAvatar]
 $description[1;
@@ -78,28 +82,27 @@ $addField[1;Yasaklanma Tarihi:;
 $addField[1;Yasaklanma Sebebi:;
 $if[$getBanReason[$guildID;$authorID]==;\`\`\`Sebep Belirtilmedi\`\`\`;\`\`\`$getBanReason[$guildID;$authorID]\`\`\`]]]
 $footer[1;Yasaklandığı sunucu:$serverName[$guildID]]
-`
-})
+`,
+});
 
-bot.banRemoveCommand({ 
-channel: "$getServerVar[banlog]", 
-code: `
+bot.banRemoveCommand({
+  channel: "$getServerVar[banlog]",
+  code: `
 $author[1;$userTag Adlı kişinin yasağı kaldırıldı.;$authorAvatar]
 $thumbnail[1;$authorAvatar]
 
 $footer[1;Yasak Kaldırılma Tarihi]
 $addTimestamp[1]
-` 
-})
+`,
+});
 
 bot.deletedCommand({
-    channel: "1000316728955387944",
-    code: `
+  channel: "1000316728955387944",
+  code: `
 $author[1; $userTag[$authorID] adlı kişinin mesajı silindi;$authorAvatar;]
 $thumbnail[1;$authorAvatar]
-$footer[1;Mesajı Silen: $authorID | Kanal:#$channelName[$channelUsed];$authorAvatar]
+$footer[1;Mesajı Silen: $userTag | Kanal:#$channelName[$channelUsed];$authorAvatar]
 $description[1;
 $addField[1;Silinen Mesaj:;$if[$message==;\`\`\`Bilinmiyor\`\`\`;\`\`\`$message\`\`\`]]]
-`
-})
-
+`,
+});
