@@ -106,3 +106,48 @@ $description[1;
 $addField[1;Silinen Mesaj:;$if[$message==;\`\`\`Bilinmiyor\`\`\`;\`\`\`$message\`\`\`]]]
 `,
 });
+
+bot.onGuildJoin()
+
+
+bot.guildJoinCommand({
+  channel:"994571640727949332",
+  code:`
+  $createFile[$joinSplitText[
+]
+$textSplit[$serverNames;, ];sunucular.txt]
+  $color[1;WHITE]
+  $title[1;Bir Sunucuya Katıldım]
+  $thumbnail[1;$serverIcon[$guildID]]
+  $addTimestamp[1]
+  $description[1;
+  **Sunucunun İsmi** -> **$serverName**
+  
+  **Sunucunun Açıklaması** -> **$serverDescription**
+  
+  **Sunucudaki Kişi Sayisi** -> **$membersCount**
+  ]
+  `
+})
+
+
+bot.onGuildLeave()
+bot.guildLeaveCommand({
+  channel:"994571640727949332",
+  code:`
+  $createFile[$joinSplitText[
+]
+$textSplit[$serverNames;, ];sunucular.txt]
+  $color[1;WHITE]
+  $title[1;Bir Sunucuya Ayrıldım ]
+  $thumbnail[1;$serverIcon[$guildID]]
+  $addTimestamp[1]
+  $description[1;
+  **Sunucunun İsmi** -> **$serverName**
+  
+  **Sunucunun Açıklaması** -> **$serverDescription**
+  
+  **Sunucudaki Kişi Sayisi** -> **$membersCount**
+  ]
+  `
+})
