@@ -9,7 +9,7 @@ $setGlobalUserVar[para;$sum[$random[15000;25000];$getGlobalUserVar[para;$authorI
 
 ***Mevcut Mesleğin:***$getGlobalUserVar[meslek;$authorID]
 **Maaş:**$getGlobalUserVar[mpara;$authorID]]
-$replaceText[$rcooldown[2s;%time% süre beklemelisin]
+$globalCooldown[24h;%time% süre beklemelisin]
 
 `
 }
