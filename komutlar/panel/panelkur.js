@@ -1,8 +1,10 @@
 module.exports={
 name:"panel",
 code:`
-$description[1;Üye panel kuruldu]
-$createChannel[$guildID;Üye Sayısı•$membersCount;Voice;yes]
+$onlyPerms[admin;]
+$description[1;Sunucu panel kuruldu]
+$createChannel[$guildID;Üye Sayısı・$membersCount;Voice;no]
+$createChannel[$guildID;Bot Sayısı・$botCount;Voice;no
 
 `
 }
