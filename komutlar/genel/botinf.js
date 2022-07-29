@@ -6,6 +6,8 @@ $addField[1;Gecikme:;$pingms]
 
 $addField[1;Node Sürümü:;$nodeVersion]
 
+$addField[1;Aoi.js Sürümü:;$packageVersion]
+
 $addField[1;Ram:;$ram[heapTotal]]
 
 $addField[1;Kullanıcı Sayısı:;$allMembersCount]
