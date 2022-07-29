@@ -9,13 +9,10 @@ $onlyIf[$mentioned[1]!=;Lütfen bir kullanici etiketleyin lütfen.]
 $onlyIf[$noMentionMessage>=0;<@$authorID> Eksili bir sayi veya sıfır (0) giremezsin.]
 $setGlobalUserVar[para;$sum[$getGlobalUserVar[para;$mentioned[1]];$noMentionMessage];$mentioned[1]]
 $setGlobalUserVar[para;$sub[$getGlobalUserVar[para;$authorID];$noMentionMessage];$authorID]
-$onlyIf[$mentioned[1]!=$authorID; <@$authorID> kendine para gönderemezsin.]
-$onlyIf[$noMentionMessage<$getGlobalUserVar[para;$authorID];<@$authorID> o kadar paran yok.]
-$color[$random[000000;999999]]
-$onlyIf[$isBot[$mentioned[1]]!=true;Bota para gönderemezsin.]
+$color[1;$random[000000;999999]]
 $title[1;Para Transferi Başarılı]
 $description[1;💳 | <@$mentioned[1]> adlı kullanıcıya $numberSeparator[$noMentionMessage] <:MacCoin:1000805779592458370> MacCoin gönderdin.]
-$onlyIf[$noMentionMessage<10000001; <@$authorID>,  10.000.000 üstü sayı giremezsin.]
+
 
 `
 }
