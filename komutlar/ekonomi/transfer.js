@@ -9,7 +9,7 @@ $setGlobalUserVar[para;$sub[$getGlobalUserVar[para;$authorID];$noMentionMessage]
 $color[1;$random[000000;999999]]
 $title[1;Para Transferi Başarılı]
 $description[1;💳 | <@$mentioned[1]> adlı kullanıcıya $numberSeparator[$noMentionMessage] <:MacCoin:1000805779592458370> MacCoin gönderdin.]
-$onlyI
+$onlyIf[$mentioned[1]!=$authorID;Bu sensin ]
 
 `
 }
