@@ -19,6 +19,8 @@ bot.variables({
   banka: "0",
   para: "0",
   prefix: "+",
+  pbot:"$botCount",
+  puye:"$membersCount",
 });
 bot.status(
   {
