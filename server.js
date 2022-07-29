@@ -28,15 +28,10 @@ bot.status(
     time: "180",
   },
   {
-    text: "$serverCount sunucuya hizmet veriyoruz",
+    text: "$serverCount sunucu | $membersCount kişiyiz",
     type: "WATCHİNG",
     status: "online",
   },
-  {
-    text: "$allMembersCount kişiyiz",
-    type: "Watching",
-    status: "online",
-  }
 );
 bot.onJoin();
 bot.onLeave();

@@ -11,8 +11,10 @@ $title[1;Para Transferi Başarılı]
 $description[1;💳 | <@$mentioned[1]> adlı kullanıcıya $numberSeparator[$noMentionMessage] <:MacCoin:1000805779592458370> MacCoin gönderdin.]
 $onlyIf[$mentioned[1]!=$authorID;{newEmbed:{description:Kendine para göndermezsin.}{color:RED}} ]
 $onlyIf[$noMentionMessage!=;{newEmbed:{description:Bir miktar belirtmelisin.}{color:GREEN}}]
-$onlyIf[$userExists[$mentioned[1]]==false;Bir kullanici belirt]
-$onlyIf[$mentioned[1]!=;{newEmbed:{description:Bir kullanıcı etiketlemelisin.}
+$onlyIf[$userExists[$mentioned[1]]!=undefined;{newEmbed:{description:Bir kullanıcı etiketlemelisin.}{color:RED}}]
+$onlyIf[$mentioned[1]!=;{newEmbed:{description:Bir kullanıcı etiketlemelisin.}{color:RED}}]
+
+
 
 
 `
