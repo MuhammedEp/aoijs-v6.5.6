@@ -2,7 +2,7 @@ module.exports={
 name:"cüzdan",
 aliases:["param","bal"],
 code:`
-$reply
+$reply[$messageID;no]
 $onlyIf[$isBot[$mentioned[1;yes]]!=true;\`Hata Algılandı\` Bu Bir Bot]
  
 $thumbnail[1;$userAvatar[$mentioned[1;yes]]]

@@ -1,5 +1,6 @@
 module.exports={
 name:"günlük",
+aliases:["daily"],
 code:`
 $title[1;Günlük paran]
 $description[1;
@@ -8,7 +9,7 @@ $setGlobalUserVar[para;$sum[$random[15000;25000];$getGlobalUserVar[para;$authorI
 
 ***Mevcut Mesleğin:***$getGlobalUserVar[meslek;$authorID]
 **Maaş:**$getGlobalUserVar[mpara;$authorID]]
-$replaceText[$rel$cooldown[24h;%time% süre beklemelisin]
+$replaceText[$rcooldown[2s;%time% süre beklemelisin]
 
 `
 }
