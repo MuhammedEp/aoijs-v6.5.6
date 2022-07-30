@@ -30,7 +30,7 @@ bot.status(
     time: "180",
   },
   {
-    text: "$serverCount sunucu ",
+    text: "$serverCount sunucu | $allMembersCount kişiyiz ",
     type: "WATCHİNG",
     status: "online",
   },
