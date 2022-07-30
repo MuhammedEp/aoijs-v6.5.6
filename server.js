@@ -20,6 +20,8 @@ bot.variables({
   para: "0",
   prefix: "+",
   panel:"kapalı",
+  id:"",
+  teprol:"0/0/0/0/0",
 });
 bot.status(
   {
@@ -32,7 +34,7 @@ bot.status(
     text: "$serverCount sunucu | $allMembersCount kişiyiz ",
     type: "WATCHİNG",
     status: "online",
-  },
+  }
 );
 bot.onJoin();
 bot.onLeave();
