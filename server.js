@@ -57,8 +57,8 @@ bot.joinCommand({
 <a:mgiris:974950521507045376> **$userTag** hoşgeldin **$serverName[$guildID]** sunucusuna seninle beraber \`$membersCount\` kişiyiz.
 $wait[1s]
 $if[$getServerVar[panel]==açık]
-$editChannel[$channelID[Üye Sayısı・$membersCount;$default;Üye Sayısı・$membersCount;$default;$default;$default;2;yes]
-$editChannel[$channelID[Bot Sayısı・$botCount;$default;Bot Sayısı・$botCount;$default;$default;
+$editChannel[$channelID[Üye Sayısı・$sub[1;$membersCount]];$default;$default;$default;$default;$default;2;yes]
+$editChannel[$channelID[Bot Sayısı・$sub[1;$botCount]];$default;$default;$default;$default;$default;2;yes]
 `,
 });
 
