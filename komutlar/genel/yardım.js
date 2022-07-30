@@ -9,13 +9,13 @@ $description[1;
 $addField[1;Moderasyon Komutları;\`\`\`
 📗$getServerVar[prefix]ban
 📗$getServerVar[prefix]unban
-📗$getServerVar[prefix]sil]
+📗$getServerVar[prefix]sil
 
 
 
 
-
-
+\`\`\`
+]
 ]
 `
 }
