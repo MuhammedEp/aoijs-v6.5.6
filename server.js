@@ -19,7 +19,7 @@ bot.variables({
   banka: "0",
   para: "0",
   prefix: "+",
-  panel:"",
+  panel:"kapalı",
 });
 bot.status(
   {
@@ -53,8 +53,12 @@ loader.load(bot.cmd, "./komutlar/");
 bot.joinCommand({
   channel: "$getServerVar[hgbb]",
   code: `
+  $if[$getServerVar[panel]==açık;kapalı]
 <a:mgiris:974950521507045376> **$userTag** hoşgeldin **$serverName[$guildID]** sunucusuna seninle beraber \`$membersCount\` kişiyiz.
 $wait[1s]
+$if[$getServerVar[panel]==açık]
+$editChannel[$channelID[Üye Sayısı・$membersCount;$default;Üye Sayısı・$membersCount;$default;$default;$default;2;yes]
+$editChannel[$channelID[Bot Sayısı・$botCount;$default;Bot Sayısı・$botCount;$default;$default;
 `,
 });
 
