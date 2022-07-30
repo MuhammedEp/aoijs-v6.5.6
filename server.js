@@ -19,8 +19,7 @@ bot.variables({
   banka: "0",
   para: "0",
   prefix: "+",
-  pbot:"",
-  puye:"",
+  panel:"",
 });
 bot.status(
   {
