@@ -7,14 +7,12 @@ $author[1;$userTag[$clientID] komutları;$userAvatar[$clientID]]
 $footer[1;Sorgulayan $userTag;$authorAvatar]
 $description[1;
 $addField[1;Moderasyon Komutları;\`\`\`
-📗$getServerVar[prefix]ban
-📗$getServerVar[prefix]unban
-📗$getServerVar[prefix]sil
-
-
+$getServerVar[prefix]ban|$getServerVar[prefix]unban|$getServerVar[prefix]sil|$getServerVar[prefix]hgbb-ayarla|$getServerVar[prefix]banlog-ayarla|$getServerVar[prefix]banlit
 
 
 \`\`\`
+
+
 ]
 ]
 `
