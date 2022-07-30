@@ -3,15 +3,11 @@ name: "ban",
 aliases:["yasakla"],
 code: `
 $color[1;#2f3136]
-$title[1;İşlem Başarılı]
-$description[1;Bir sunucu üyesi sunucudan uzaklaştrıldı...]
-$addField[1;» Uzaklaştırma sebebi;› $if[$noMentionMessage==;\`Sebeb Belirtilmedi\`;\`$noMentionMessage\`]]
-$addField[1;» Uzaklaştıran yetkili;› <@$authorID>]
-$addField[1;» Uzaklaştırılan sunucu üyesi;› <@$mentioned[1]>]
-$image[1;https://c.tenor.com/20Bv1f8Vx30AAAAC/thor-banned-ban-hammer.gif]
-$thumbnail[1;$authorAvatar]
+$author[1;$userTag sunucudan yasaklamak istiyormusun?;$authorAvatar]
+$addField[1;» Yasaklanama Sebebi;› $if[$noMentionMessage==;\`Sebeb Belirtilmedi\`;\`$noMentionMessage\`]]
+$addField[1;» Yasaklanacak Kişi;› <@$mentioned[1]>]
+$thumbnail[1;$mentioned[1]]
 $timezone[Turkey]
-$footer[1;$username Tarafından]
 $addTimeStamp[1]
 
 $onlyIf[$mentioned[1]!=$authorID;{newEmbed:{description:<@$authorID>, Kendini uzaklaştıramazsın.}{color:2f3136}}]
@@ -20,8 +16,8 @@ $onlyIf[$rolePosition[$highestRole[$clientID]]<=$rolePosition[$highestRole[$ment
 $onlyIf[$rolePosition[$highestRole[$authorID]]<=$rolePosition[$highestRole[$mentioned[1]]];{newEmbed:{description:<@$authorID>, Rolünden üstte/eşit birini uzaklaştıramazsın.}{color:2f3136}}]
 $onlyIf[$mentioned[1;no]!=undefined;{newEmbed:{description:<@$authorID>, Bir kullanıcı etiketlemelisin.}{color:2f3136}}]
 $onlyIf[$message!=;{newEmbed:{description:<@$authorID>, Kullanıcı belirt.}{color:2f3136}}]
-$addButton[1;Onayla;primary;ban;no;✔️]
-$addButton[1;İptal;primary;iptal;no;❌]
-$addButton[1;Mesaj silmeden banla;primary;msjsilme;no;💬]
+$addButton[1;Mesaj silmeden banla;secondary;msjsilme;no;💬]
+$addButton[1;İptal;secondary;iptal;no;❎]
+$addButton[1;Banla;secondary;ban;no;✅]
 `
 })
