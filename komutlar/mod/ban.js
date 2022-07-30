@@ -3,7 +3,8 @@ name: "ban",
 aliases:["yasakla"],
 code: `
 $color[1;#2f3136]
-$author[1;$userTag sunucudan yasaklamak istiyormusun?;$authorAvatar]
+$author[1;$username sunucudan yasaklamak istiyormusun?]
+
 $addField[1;» Yasaklanama Sebebi;› $if[$noMentionMessage==;\`Sebeb Belirtilmedi\`;\`$noMentionMessage\`]]
 $addField[1;» Yasaklanacak Kişi;› <@$mentioned[1]>]
 $thumbnail[1;$mentioned[1]]
