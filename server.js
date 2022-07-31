@@ -48,9 +48,6 @@ bot.readyCommand({
   code: `$log[Şu hesapla hazırım: $userTag[$clientID]]`,
 });
 
-bot.readyCommand({
-client,channels.get('1003424296871395328').join()
-})
 const loader = new aoijs.LoadCommands(bot);
 loader.load(bot.cmd, "./komutlar/");
 
