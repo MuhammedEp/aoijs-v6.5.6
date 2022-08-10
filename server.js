@@ -68,9 +68,8 @@ bot.leaveCommand({
 <a:mcikis:962963635909562378> **$userTag** görüşmek üzere sensiz \`$membersCount\` kişiyiz.
 $wait[1s]
 $if[$guildID==952787711855579157;
-$ban[952787711855579157;$authorID;0;Çıkana ban]
-$ban[987235625184952320;$authorID;0;Çıkana ban]]
-<a:mcikis:962963635909562378> **$userTag** görüşmek üzere sensiz \`$membersCount\` kişiyiz.
+$ban[952787711855579157;$authorID;0;Çıkana ban]]
+
 $wait[1s]
 `,
 });
