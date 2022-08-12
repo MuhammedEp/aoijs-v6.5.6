@@ -21,7 +21,7 @@ bot.variables({
   prefix: "+",
   panel:"kapalı",
   id:"",
-  mesajs:"",
+  mesajs:"0",
 });
 bot.status(
   {
