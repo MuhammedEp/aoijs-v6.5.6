@@ -24,6 +24,8 @@ bot.variables({
   mesajs:"0",
   xp:"0",
   xpm:"25",
+  seviye:"0",
+  seviyeknl:"",
 });
 bot.status(
   {
