@@ -19,5 +19,6 @@ name:"tecrübe-miktar",
   $description[1;Seviye artış miktarı **$message[1]** olarak ayarlandı.]
   $color[1;RED]
   $setServerVar[xpm;$message[1]]
+  $onlyIf[$isNumber[$message[1]]!=false;{newEmbed{:description:Bir sayı giriniz lütfen.}{color:RED}}]
 `
 }]
