@@ -25,7 +25,7 @@ bot.variables({
   xp:"0",
   xpm:"25",
   seviye:"0",
-  seviyeknl:"991253350165258270",
+  seviyeknl:"",
 });
 bot.status(
   {
