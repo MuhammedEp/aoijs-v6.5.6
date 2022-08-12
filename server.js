@@ -22,6 +22,7 @@ bot.variables({
   panel:"kapalı",
   id:"",
   tepkirol:"0/0/0/0/0",
+  mesajs:"",
 });
 bot.status(
   {
