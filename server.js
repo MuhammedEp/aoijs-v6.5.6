@@ -21,7 +21,6 @@ bot.variables({
   prefix: "+",
   panel:"kapalı",
   id:"",
-  tepkirol:"0/0/0/0/0",
   mesajs:"",
 });
 bot.status(
@@ -95,7 +94,7 @@ bot.banRemoveCommand({
   code: `
 $author[1;$userTag Adlı kişinin yasağı kaldırıldı.;$authorAvatar]
 $thumbnail[1;$authorAvatar]
-
+$description[1;$username]
 $footer[1;Yasak Kaldırılma Tarihi]
 $addTimestamp[1]
 `,
@@ -107,7 +106,7 @@ bot.deletedCommand({
 $author[1; $username adlı kişinin mesajı silindi;$authorAvatar;]
 $thumbnail[1;$authorAvatar]
 $footer[1;Mesajı Silen: $userTag[$authorID] | Kanal:#$channelName[$channelUsed];$authorAvatar]
-$description[1;
+$description[1;$username
 $addField[1;Silinen Mesaj:;$if[$message==;\`\`\`Bilinmiyor\`\`\`;\`\`\`$message\`\`\`]]]
 `,
 });
@@ -128,7 +127,7 @@ $textSplit[$serverNames;, ];sunucular.txt]
   $description[1;
   **Sunucunun İsmi** -> **$serverName**
   
-  **Sunucunun Açıklaması** -> **$serverDescription**
+  **Sunucunun Açıklaması** -> **$if[$serverDescription==;Yok;$serverDescription]**
   
   **Sunucudaki Kişi Sayisi** -> **$membersCount**
   ]
@@ -150,7 +149,7 @@ $textSplit[$serverNames;, ];sunucular.txt]
   $description[1;
   **Sunucunun İsmi** -> **$serverName**
   
-  **Sunucunun Açıklaması** -> **$serverDescription**
+  **Sunucunun Açıklaması** -> **$if[$serverDescription==;Yok;$serverDescription]**
   
   **Sunucudaki Kişi Sayisi** -> **$membersCount**
   ]

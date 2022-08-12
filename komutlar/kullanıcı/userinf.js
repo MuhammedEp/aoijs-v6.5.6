@@ -12,7 +12,7 @@ $addField[Rozetler;> $replaceText[$replaceText[$replaceText[$replaceText[$replac
 $addField[Üye izinleri:;$if[$hasPerms[$guildID;$mentioned[1;yes];admin]==true;<:tac:981253324584149002> Yönetici;$if[$hasPerms[$guildID;$mentioned[1;yes];ban;kick;managemessages]==true;<a:05:981249055827067000> Moderatör;<:kullanici:977869477247082546> Üye]]
 $addField[Toplam mesaj sayısı:;💬 $getUserVar[mesajs;$authorID]
 $addField[Ban Sayısı:;(yakında)]
-$addField[Aktiflik Durumu:;$getUserStatus[$mentioned[1;yes]]]
+$addField[Aktiflik Durumu:;$userStatus[$mentioned[1;yes]]]
 
 
 ]
