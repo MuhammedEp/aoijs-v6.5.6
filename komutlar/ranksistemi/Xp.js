@@ -1,3 +1,6 @@
 module.exports={
 name:"$alwaysExecute",
-code:
+code:`
+$setUserVar[xp;$sum[$getUserVar[xp;$authorID];$getServerVar[xpm]];$authorID]
+`
+}

@@ -22,6 +22,8 @@ bot.variables({
   panel:"kapalı",
   id:"",
   mesajs:"0",
+  xp:"0",
+  xpm:"25",
 });
 bot.status(
   {
