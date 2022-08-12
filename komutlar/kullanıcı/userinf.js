@@ -10,9 +10,10 @@ $description[1;
 $addField[Rozetler;> $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getUserBadges[$mentioned[1;yes]];HOUSE_BALANCE;<a:balance:1007562254465650789>;1];HOUSE_BRILLIANCE;<a:brilliance:1007562598994149467>;1];HOUSE_BRAVERY;<a:bravery:1007562832268754946>;1]
 ;VERIFIED_BOT;<a:onayl_bot:1007563011185188944>;1];none;Yok;1]]
 $addField[Üye izinleri:;$if[$hasPerms[$guildID;$mentioned[1;yes];admin]==true;<:tac:981253324584149002> Yönetici;$if[$hasPerms[$guildID;$mentioned[1;yes];ban;kick;managemessages]==true;<a:05:981249055827067000> Moderatör;<:kullanici:977869477247082546> Üye]]
-$addField[Toplam mesaj sayısı:;💬 $getUserVar[mesajs;$authorID]
+$addField[Toplam mesaj sayısı:;💬 $getUserVar[mesajs;$mentioned[1;yes]]
 $addField[Ban Sayısı:;(yakında)]
-$addField[Aktiflik Durumu:;$replaceText[$replaceText[$replaceText[$replaceText[$status[$mentioned[1;yes]];dnd;<:mesgul:977697566332452874> Meşgul;1];online;<:cevrimici:977696691601952768> Çevrimiçi;1];idle;Boşta;1];offline;Çevrimdışı;1]]
+$addField[Aktiflik Durumu:;$replaceText[$replaceText[$replaceText[$replaceText[$status[$mentioned[1;yes]];dnd;<:mesgul:977697566332452874> Meşgul;1];online;<:cevrimici:977696691601952768> Çevrimiçi;1];idle;<:bosta:977697844385443970> Boşta;1];offline;<:cevrimdisi:977697007810514984> Çevrimdışı;1]]
+$addField[Takma Adı:;<@$mentioned[1;yes]>
 
 
 ]
