@@ -12,8 +12,9 @@ module.exports = [{
   $if: "v4",
   type:"interaction",
   prototype:"button",
-  code:`$interactionReply[selam]
-$interactionDefer[yes]
+  code:`$interactionDefer[yes]
+  $createFile[$serverEmojis;emojiler.zip]
+
 
   
   `
