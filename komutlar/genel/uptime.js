@@ -1,7 +1,7 @@
 module . exports ={
   name: "uptime",
   code: `
-$color[1;O]
+$color[1;GREEN]
 $footer[1;Sorgulayan: $userTag;$authorAvatar]
 $author[1;$username[$clientID] Botun Uptime Süresi;$userAvatar[$clientID]]
 $description[1;
