@@ -4,6 +4,7 @@ const bot = new aoijs.Bot({
   token: process.env.token,
   prefix: "$getServerVar[prefix]",
   intents: "all",
+  mobilePlatform:true,
 });
 
 //Eventler
