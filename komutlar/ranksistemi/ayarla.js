@@ -19,7 +19,8 @@ name:"tecrübe-miktar",
   $description[1;Seviye artış miktarı **$message[1]** olarak ayarlandı.]
   $color[1;GREEN]
   $setServerVar[xpm;$message[1]]
-  $onlyIf[$message[1]<=
+  $onlyIf[$message[1]<=500;{newEmbed:{description:Tecrübe-miktar sayısını 1 ile 500 arasında belirleyebilirsin.}{color:RED}}]
+  $onlyIf[$message[1]=>1;{newEmbed:{description:Tecrübe-miktar sayısını 1 ile 500 arasında belirleyebilirsin.}{color:RED}}]
   $onlyIf[$isNumber[$message[1]]!=false;{newEmbed:{description:Bir sayı giriniz lütfen.}{color:RED}}]
 `
 }]

@@ -25,6 +25,6 @@ module.exports = [{
   prototype:"button",
   code:`
   $deleteMessage[$messageID;$channelID]
-  $if[$getMessageVar[id;$get[id]]!=$authorID;Yazan kişi sen değilsin.;]
+  
   `
 }]
