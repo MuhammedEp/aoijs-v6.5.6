@@ -17,8 +17,9 @@ $setServerVar[seviyeknl;]
 name:"tecrübe-miktar",
   code:`
   $description[1;Seviye artış miktarı **$message[1]** olarak ayarlandı.]
-  $color[1;RED]
+  $color[1;GREEN]
   $setServerVar[xpm;$message[1]]
-  $onlyIf[$isNumber[$message[1]]!=false;{newEmbed{:description:Bir sayı giriniz lütfen.}{color:RED}}]
+  $onlyIf[$message[1]<=
+  $onlyIf[$isNumber[$message[1]]!=false;{newEmbed:{description:Bir sayı giriniz lütfen.}{color:RED}}]
 `
 }]
