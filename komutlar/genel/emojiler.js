@@ -12,14 +12,11 @@ module.exports = [{
   $if: "v4",
   type:"interaction",
   prototype:"button",
-  code:`$interactionReply[$onlyPerms[admin;Sadece Yöneticiler]
-  $createFile[$serverEmojis[];emojiler.js]]
-  $interactionDeferUpdate
-
-
+  code:`$onlyPerms[admin;{newEmbed:{description:<@$authorID> Sadece Yöneticiler}{color:RED}}]
+ $dm[$authorID;
+ $createFile[$serverEmojis[];emojiler.js]]
   
   `
-  
 },{
   
   name:"sil",
@@ -28,5 +25,6 @@ module.exports = [{
   prototype:"button",
   code:`
   $deleteMessage[$messageID;$channelID]
+  $onlyForIDs[$authorID;(]
   `
 }]
