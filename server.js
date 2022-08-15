@@ -32,13 +32,13 @@ bot.status(
   {
     text: "Macbot Destek",
     type: "Watching",
-    status: "online",
-    time: "30",
+    status: "idle",
+    time: "15",
   },
   {
     text: "$serverCount sunucu | $allMembersCount kişiyiz ",
     type: "WATCHİNG",
-    status: "online",
+    status: "idle",
   },{
     text:"Aoi.js ile tekrar aktifim komutlarım yok ama",
     type:"Watching",
