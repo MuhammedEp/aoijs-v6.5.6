@@ -40,7 +40,7 @@ bot.status(
     type: "WATCHİNG",
     status: "idle",
   },{
-    text:"Aoi.js ile tekrar aktifim komutlarım yok ama",
+    text:"Aoi.js ile tekrar aktifim ama komutlarım yok",
     type:"Watching",
     status:"idle"
   }
