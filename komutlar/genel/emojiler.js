@@ -1,6 +1,6 @@
 
 module.exports = [{
-  name:"emojiler",
+  name:"skdj",
   code:`
   $setMessageVar[id;$authorID;$get[id]]
   $let[id;$apiMessage[$channelID;;{newEmbed:{color:GREEN}{author:$serverName[$guildID] Sunucusunun Emojileri:$serverIcon}{thumbnail:$authorAvatar}{footer:Sorgulayan $userTag:$authorAvatar}{description:

@@ -1,6 +1,6 @@
 module.exports={
 name:"sunucu",
-aliases:["server"],
+aliases:["server","sw"],
 code:`
 $author[1;$serverName[$guildID] Sunucu bilgileri;$serverIcon]
 $thumbnail[1;$serverIcon]
