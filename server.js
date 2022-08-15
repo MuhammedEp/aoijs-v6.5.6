@@ -4,7 +4,7 @@ const bot = new aoijs.Bot({
   token: process.env.token,
   prefix: "$getServerVar[prefix]",
   intents: "all",
-  mobilePlatform:true,
+  mobilePlatform:false,
 });
 
 //Eventler
@@ -33,12 +33,16 @@ bot.status(
     text: "Macbot Destek",
     type: "Watching",
     status: "online",
-    time: "180",
+    time: "30",
   },
   {
     text: "$serverCount sunucu | $allMembersCount kişiyiz ",
     type: "WATCHİNG",
     status: "online",
+  },{
+    text:"Aoi.js ile tekrar aktifim komutlarım yok ama",
+    type:"Watching",
+    status:"idle"
   }
 );
 bot.onJoin();
