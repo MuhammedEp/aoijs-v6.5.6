@@ -1,6 +1,6 @@
 module.exports=[{
-name:"giriş-çıkış-ayarla",
-aliases:["hgbb-ayarla"],
+name:"giriş-çıkış",
+aliases:["hgbb-ayarla","hgbb"],
 code:`
 $setServerVar[hgbb;$mentionedChannels[1;yes]]
 $description[1;Giriş-çıkış kanalı <#$mentionedChannels[1;yes]> olarak ayarlandı.]
