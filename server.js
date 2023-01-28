@@ -30,7 +30,7 @@ bot.variables({
 });
 bot.status(
   {
-    text: "Macbot Destek",
+    text: "Youtube",
     type: "Watching",
     status: "idle",
     time: "15",
@@ -40,8 +40,8 @@ bot.status(
     type: "WATCHİNG",
     status: "idle",
   },{
-    text:"Aoi.js ile tekrar aktifim ama komutlarım yok",
-    type:"Watching",
+    text:"Minecraft",
+    type:"Playing",
     status:"idle"
   }
 );
@@ -107,7 +107,7 @@ $addTimestamp[1]
 });
 
 bot.deletedCommand({
-  channel: "1000316728955387944",
+  channel: "channel ıd",
   code: `
 $author[1; $userTag[$authorID] adlı kişinin mesajı silindi;$authorAvatar;]
 $thumbnail[1;$authorAvatar]
@@ -121,7 +121,7 @@ bot.onGuildJoin()
 
 
 bot.guildJoinCommand({
-  channel:"994571640727949332",
+  channel:"Channel ıd",
   code:`
   $createFile[$joinSplitText[
 ]
@@ -143,7 +143,7 @@ $textSplit[$serverNames;, ];sunucular.txt]
 
 bot.onGuildLeave()
 bot.guildLeaveCommand({
-  channel:"994571640727949332",
+  channel:"Channel ıd",
   code:`
   $createFile[$joinSplitText[
 ]
