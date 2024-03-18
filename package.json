@@ -12,7 +12,8 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@akarui/aoi.panel": "^0.0.1",
-        "aoi.js": "^5.5.5"
+        "@akarui/aoi.panel": "^0.0.4",
+        "@akarui/aoi.parser": "^1.0.1",
+        "aoi.js": "^6.5.6"
     }
 }
