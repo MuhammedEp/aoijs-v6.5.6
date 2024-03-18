@@ -1,3 +1,2 @@
-# aoijs-v5.5.5-karma-altyapi
-Aoi.js v5.5.5 karışık komutlar bulunan altyapı
-Ortaya karışık bı aoijs altyapısı paylasiyim dedim epey eski içinde ne vardı bende unuttum :)
+# aoijs-v6.5.6
+Aoi.js v6.5.6 içinde birkac komut var log sistemleri vs.
