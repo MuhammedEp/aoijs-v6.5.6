@@ -1,15 +1,19 @@
-const aoijs = require("aoi.js");
+const { AoiClient } = require("aoi.js");
 
-const bot = new aoijs.Bot({
-  token: process.env.token,
-  prefix: "$getServerVar[prefix]",
-  intents: "all",
-  mobilePlatform:false,
+const bot = new AoiClient({
+    token: process.env.token,
+    prefix: "Discord Bot Prefix",
+    intents: ["MessageContent", "Guilds", "GuildMessages"],
+    events: ["onMessage", "onInteractionCreate"],
+    database: {
+        type: "aoi.db",
+        db: require("@akarui/aoi.db"),
+        dbType: "KeyValue",
+        tables: ["main"],
+        securityKey: "a-32-characters-long-string-here"
+    }
 });
 
-//Eventler
-bot.onMessage();
-bot.onInteractionCreate();
 bot.variables({
   hgbb: "",
   banlog: "",
@@ -30,35 +34,18 @@ bot.variables({
 });
 bot.status(
   {
-    text: "Youtube",
-    type: "Watching",
-    status: "idle",
-    time: "15",
-  },
-  {
-    text: "$serverCount sunucu | $allMembersCount kişiyiz ",
+    name: "$serverCount sunucu | $allMembersCount kişiyiz ",
     type: "WATCHİNG",
     status: "idle",
-  },{
-    text:"Minecraft",
-    type:"Playing",
-    status:"idle"
   }
 );
-bot.onJoin();
-bot.onLeave();
-bot.onBanAdd();
-bot.onBanRemove();
-bot.onMessageDelete();
-
 //Bot açıldığında konsola gönderilecek komut
 bot.readyCommand({
   channel: "",
   code: `$log[Şu hesapla hazırım: $userTag[$clientID]]`,
 });
 
-const loader = new aoijs.LoadCommands(bot);
-loader.load(bot.cmd, "./komutlar/");
+bot.loadCommamds("./komutlar/", true);
 
 //CALLBACKLER
 bot.joinCommand({
